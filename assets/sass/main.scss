@@ -1,0 +1,13 @@
+
+@import 'base/reset';
+@import 'base/base';
+@import 'base/typography';
+
+@import 'abstracts/variables';
+
+@import 'layout/header';
+@import 'layout/main';
+@import 'layout/footer';
+
+
+@import 'vendor/bootstrap_4.5.0/bootstrap.scss';

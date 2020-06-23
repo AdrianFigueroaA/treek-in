@@ -1,0 +1,23 @@
+.footer{
+
+    background:$onyx;
+    height: 150px;
+    
+    justify-content: space-between;
+    color: $white;
+    align-items: center;
+}
+
+.footer__legal{
+
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.footer__spa{
+
+    display: flex;
+justify-content: space-between;
+align-items: center;
+}
