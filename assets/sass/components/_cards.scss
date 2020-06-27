@@ -4,8 +4,6 @@
     align-items: center;
 }
 
-
-
 .card-body{
 
 text-align: center;
@@ -17,14 +15,41 @@ height: 400px;
 
 .contenedor__tarjeta1{
 
-    width: 25%;
+width: 25%;
 margin: 0 30px;
 }
 
+
+.contenedor__tarjeta1  , .contenedor__tarjeta2 {
+    h5{
+
+    font-family: $raleway;
+    text-align: left;
+    
+    }
+
+ 
+}
+
+
+
+.contenedor__tarjeta1 ,.contenedor__tarjeta2 {
+
+
+    p{
+    font-family: $raleway;
+    font-weight: bold;
+    font-size:$xxxx-large ;
+
+    }
+ 
+}
+
+
 .contenedor__tarjeta2{
 
-width: 25%;
-margin: 0 30px;
+    width: 25%;
+    margin: 0 30px;
 }
 
 
@@ -36,41 +61,51 @@ ol, ul, dl {
 }
 
 
-@media (max-width:768px)
-{
+// resolucion para tablets
+
+@media (max-width:768px){
 
 
-.contenedor__tarjeta1{
+    .contenedor__tarjeta1 ,.contenedor__tarjeta2 {
 
-margin-bottom: 30px;
-width: 40%;
-}
+            margin-bottom: 30px;
+            width: 40%;
+            }
 
-.contenedor__tarjeta2{
-
-width: 40%;
-margin-bottom: 30px;
-}
-
-
+         
 }
 
 
-@media (max-width:360px)
-{
 
-.contenedor__tarjeta1{
+// resolucion para moviles
 
-margin-bottom: 30px;
-width: 80%;
-}
+@media (max-width:360px){
 
-.contenedor__tarjeta2{
+    .contenedor__tarjeta1 , .contenedor__tarjeta2{
 
-width: 80%;
+    margin-bottom: 30px;
+    width: 80%;
+    }
 
-}
 
+
+    .contenedor__tarjeta1 ,.contenedor__tarjeta2 {
+
+
+        p{
+        font-family: $raleway;
+        font-weight: bold;
+        font-size:$xxx-large ;
+
+        }
+    
+    }
+
+
+    .precios h2{
+
+        padding-top: 20%;
+    }
 
 }
 

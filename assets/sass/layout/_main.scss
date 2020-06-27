@@ -1,12 +1,15 @@
 
+
+//   resolucion desktop
+
   .hero{
 
-   background-image: url(./../img/bg-hero.svg);
-   background-repeat: no-repeat;
-  height: 950px;
-   background-position: center;
+    background-image: url(./../img/bg-hero.svg);
+    background-repeat: no-repeat;
+    height: 950px;
+    background-position: center;
     padding: 0 20px;
-    
+
  }
 
 
@@ -19,60 +22,70 @@
     position: absolute;
     right: 27px;
     left: 60px;
+}
 
+
+
+.principal__texto {
+
+    h1{
+    font-family:$raleway;
+    font-weight:bold;
+    font-size:$xxx-large;
+
+    }
+
+    p{
+    font-family:$raleway;
+        font-weight: lighter;
+        font-size:$medium ;
+    }
+
+}
     
-}
-
-
-
-.img_hero{
-    position: relative;
-    top: 53px;
-    width: 100%;
-}
 
 .caracteristicas{
 
-padding: 0 20px;
-margin: 0;
-justify-content: center;
+    padding: 0 20px;
+    margin: 0;
+    justify-content: center;
 
 }
+
 .caracteristicas__estadisticas{
 
-display: flex;
-flex-direction: column;
-justify-content: end;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+
+
+    h1{
+
+    font-family:$raleway;
+    font-weight: bold;
+    font-size: $xxx-large;
+    text-align: center;
+
+    }
+
+
+    h2{
+
+    font-family:$raleway;
+    font-weight: bold;
+    font-size: $xxx-large;
+
+    }
+
+
+    p{
+
+    padding-right: 30%;
+
+    }
+
 }
 
-.caracteristicas__estadisticas h1{
-font-size: 21px;
-text-align: center;
-}
-
-.caracteristicas__estadisticas h2{
-font-size: 25px;
-
-}
-
-.caracteristicas__estadisticas p{
-padding-right: 30%;
-
-}
-
-
-.color{
-
-    background:$onyx ;
-    position: relative;
-    
-}
-
-
-.price{
-
-    width: 100%;
-}
 
 .precios{
 
@@ -95,121 +108,136 @@ background-position: center;
 
 .contenedor{
 
-    
-    width: 100%;
-    display: flex;
-align-items: center;
-justify-content: center;
-padding-top: 5%;
-}
-
-
-
-@media (max-width:768px)
-{
-
-.precios{
-padding-top: 20%;
-}
-
-
-
-.caracteristicas__estadisticas p {
-    padding-right: 15%;
-}
-
-
-.principal__texto{
-
-    top: 115px;
-}
-
-.pd {
-    padding: 15px 60px !important;
-}
-
-
-.hero {
-    height: 670px;
-    background-size: contain;
-}
-
-
-
-}
-
-
-
-
-
-@media (max-width:360px)
-{
-
-
-
-.principal__texto {
-    width: 80%;
-    min-width: 300px;
-    max-width: 350px;
-    top: 50px;
-    position: relative;
-    right: 25px;
-    left: 25px;
-}
-
-
-
-.principal h2{
-
-    padding-top: 100px;
-}
-
-
-.hero {
-    background-image: url(./../img/bg-hero.svg);
-    background-repeat: no-repeat;
-    height: 565px;
-    background-position: 95%;
-    padding: 40px 20px;
-    background-size: 185%;
-
-}
-
-
-.caracteristicas__estadisticas h2 {
-    font-size: 20px;
-  
-}
-
-.caracteristicas__estadisticas p {
-    padding-right: 0 !important;
-}
-
-.contenedor {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 0;
-    flex-direction: column;
-    padding-bottom: 15%;
-    background-color: $onyx;
+    padding-top: 5%;
 }
 
-.precios{
 
-   background-position: 60%;
-    width: 100%;
+// resolucion tablet
+
+@media (max-width:768px) {
+
+    .precios {
+        padding-top: 20%;
+    }
+
+
+
+    .caracteristicas__estadisticas p {
+        padding-right: 15%;
+    }
+
+
+    .principal__texto {
+
+        top: 115px;
+    }
+
+    .pd {
+        padding: 15px 60px !important;
+    }
+
+
+    .hero {
+        height: 670px;
+        background-size: contain;
+    }
+
+
+    .contenedor__tarjeta1 , .contenedor__tarjeta2  {
+
+        p {
+        font-family: "Raleway", sans-serif;
+        font-weight: bold;
+        font-size: 40px;
+
+        }
+        
+    }
+
+}
+
+// resolucion moviles
+
+
+@media (max-width:360px) {
+
+
+
+    .principal__texto {
+        width: 80%;
+        min-width: 300px;
+        max-width: 350px;
+        top: 50px;
+        position: relative;
+        right: 25px;
+        left: 25px;
+    }
+
+
+
+    .principal h2{
+
+        padding-top: 100px;
+    }
+
+
+    .hero {
+        background-image: url(./../img/bg-hero.svg);
+        background-repeat: no-repeat;
+        height: 565px;
+        background-position: 95%;
+        padding: 40px 20px;
+        background-size: 185%;
+
+    }
+
+
+    .caracteristicas__estadisticas  {
+
+
+        h2{
+        font-size:$x-large ;
+        text-align: center;
+        }
+        
+
+        p{
+
+        padding-right: 0 !important;
+
+        }
+    }
+
+
+
+    .contenedor {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 0;
+        flex-direction: column;
+        padding-bottom: 17%;
+        background-color: $onyx;
+    }
+
+    .precios{
+
+        background-position: 60%;
+        width: 100%;
+
+    h2{
+            padding-top: 30%;
+            font-family: $open-sans;
+            font-weight: normal;
+
+        }
+        
+    }
+
     
 }
-
-
-.precios h2{
-
-padding-top: 30%;
-
-}
-
-
-}
-

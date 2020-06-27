@@ -1,10 +1,4 @@
 @charset "UTF-8";
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
 .pd {
   padding: 10px 60px !important;
 }
@@ -14,6 +8,12 @@
     padding: 0 40px !important;
   }
 }
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 .hero {
   background-image: url(./../img/bg-hero.svg);
   background-repeat: no-repeat;
@@ -32,10 +32,15 @@
   left: 60px;
 }
 
-.img_hero {
-  position: relative;
-  top: 53px;
-  width: 100%;
+.principal__texto h1 {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+}
+.principal__texto p {
+  font-family: "Raleway", sans-serif;
+  font-weight: lighter;
+  font-size: 16px;
 }
 
 .caracteristicas {
@@ -49,27 +54,19 @@
   flex-direction: column;
   justify-content: end;
 }
-
 .caracteristicas__estadisticas h1 {
-  font-size: 21px;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 40px;
   text-align: center;
 }
-
 .caracteristicas__estadisticas h2 {
-  font-size: 25px;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 40px;
 }
-
 .caracteristicas__estadisticas p {
   padding-right: 30%;
-}
-
-.color {
-  background: #333745;
-  position: relative;
-}
-
-.price {
-  width: 100%;
 }
 
 .precios {
@@ -117,6 +114,12 @@
     height: 670px;
     background-size: contain;
   }
+
+  .contenedor__tarjeta1 p, .contenedor__tarjeta2 p {
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+  }
 }
 @media (max-width: 360px) {
   .principal__texto {
@@ -144,8 +147,8 @@
 
   .caracteristicas__estadisticas h2 {
     font-size: 20px;
+    text-align: center;
   }
-
   .caracteristicas__estadisticas p {
     padding-right: 0 !important;
   }
@@ -157,7 +160,7 @@
     justify-content: center;
     margin-top: 0;
     flex-direction: column;
-    padding-bottom: 15%;
+    padding-bottom: 17%;
     background-color: #333745;
   }
 
@@ -165,9 +168,10 @@
     background-position: 60%;
     width: 100%;
   }
-
   .precios h2 {
     padding-top: 30%;
+    font-family: "Open Sans", sans-serif;
+    font-weight: normal;
   }
 }
 .footer {
@@ -467,6 +471,17 @@
   margin: 0 30px;
 }
 
+.contenedor__tarjeta1 h5, .contenedor__tarjeta2 h5 {
+  font-family: "Raleway", sans-serif;
+  text-align: left;
+}
+
+.contenedor__tarjeta1 p, .contenedor__tarjeta2 p {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 45px;
+}
+
 .contenedor__tarjeta2 {
   width: 25%;
   margin: 0 30px;
@@ -478,52 +493,44 @@ ol, ul, dl {
 }
 
 @media (max-width: 768px) {
-  .contenedor__tarjeta1 {
+  .contenedor__tarjeta1, .contenedor__tarjeta2 {
     margin-bottom: 30px;
     width: 40%;
-  }
-
-  .contenedor__tarjeta2 {
-    width: 40%;
-    margin-bottom: 30px;
   }
 }
 @media (max-width: 360px) {
-  .contenedor__tarjeta1 {
+  .contenedor__tarjeta1, .contenedor__tarjeta2 {
     margin-bottom: 30px;
     width: 80%;
   }
 
-  .contenedor__tarjeta2 {
-    width: 80%;
+  .contenedor__tarjeta1 p, .contenedor__tarjeta2 p {
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+  }
+
+  .precios h2 {
+    padding-top: 20%;
   }
 }
 .boton1 {
   width: 100%;
-  margin-top: 123px;
 }
 
 .boton2 {
   width: 100%;
-  margin-top: 50px;
-}
-
-.boton2 {
-  width: 100%;
-  margin-top: 50px;
 }
 
 @media (max-width: 360px) {
+  .boton1 {
+    width: 100%;
+  }
+
   .boton2 {
     width: 100%;
-    margin-top: 30px;
   }
 }
-.navbar-light .navbar-toggler {
-  color: rgba(0, 0, 0, 0.5);
-  border-color: 1;
-}
-
 /*!
  * Bootstrap v4.5.0 (https://getbootstrap.com/)
  * Copyright 2011-2020 The Bootstrap Authors
