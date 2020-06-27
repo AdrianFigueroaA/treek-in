@@ -1,23 +1,44 @@
 .footer{
 
-    background:$onyx;
+    background:$rblack;
     height: 150px;
-    
-    justify-content: space-between;
     color: $white;
-    align-items: center;
+    
 }
 
 .footer__legal{
 
 display: flex;
-justify-content: space-between;
 align-items: center;
+justify-content: space-evenly;
 }
 
 .footer__spa{
 
-    display: flex;
-justify-content: space-between;
+display: flex;
+justify-content: center;
 align-items: center;
+justify-content: end;
+}
+
+
+@media (max-width:360px){
+.footer__spa{
+
+justify-content:center;
+}
+
+.footer__legal{
+
+align-items: end;
+
+}
+
+.footer{
+
+margin-top: 78%;
+}
+
+
+
 }

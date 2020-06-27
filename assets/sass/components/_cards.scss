@@ -1,0 +1,80 @@
+
+.card{
+
+    align-items: center;
+}
+
+
+
+.card-body{
+
+text-align: center;
+width: 100%;
+height: 400px;
+ padding:25px 15px 0 15px !important;
+
+}
+
+.contenedor__tarjeta1{
+
+    width: 25%;
+margin: 0 30px;
+}
+
+.contenedor__tarjeta2{
+
+width: 25%;
+margin: 0 30px;
+}
+
+
+ol, ul, dl {
+   
+    text-align: left;
+    padding-left: 20px;
+
+}
+
+
+@media (max-width:768px)
+{
+
+
+.contenedor__tarjeta1{
+
+margin-bottom: 30px;
+width: 40%;
+}
+
+.contenedor__tarjeta2{
+
+width: 40%;
+margin-bottom: 30px;
+}
+
+
+}
+
+
+@media (max-width:360px)
+{
+
+.contenedor__tarjeta1{
+
+margin-bottom: 30px;
+width: 80%;
+}
+
+.contenedor__tarjeta2{
+
+width: 80%;
+
+}
+
+
+}
+
+
+
+
+

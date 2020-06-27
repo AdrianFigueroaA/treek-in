@@ -8,6 +8,10 @@
 @import 'layout/header';
 @import 'layout/main';
 @import 'layout/footer';
+@import 'layout/grid';
 
+@import 'components/cards';
+@import 'components/buttons';
+@import 'components/navigations';
 
 @import 'vendor/bootstrap_4.5.0/bootstrap.scss';
