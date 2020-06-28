@@ -59,21 +59,14 @@
     justify-content: end;
 
 
-    h1{
-
-    font-family:$raleway;
-    font-weight: bold;
-    font-size: $xxx-large;
-    text-align: center;
-
-    }
+    
 
 
     h2{
 
     font-family:$raleway;
     font-weight: bold;
-    font-size: $xxx-large;
+    font-size: $xx-large;
 
     }
 
@@ -86,6 +79,16 @@
 
 }
 
+
+
+.crt{
+
+    font-family:$raleway;
+    font-weight: bold;
+    font-size: $xxx-large;
+    text-align: center;
+
+    }
 
 .precios{
 
@@ -123,6 +126,7 @@ animation: opacidad 5s ease-in 0s  ;
 p {
         font-family: "Raleway", sans-serif;
         font-weight: bold;
+        font-size: $x-large;
         
 
         }
