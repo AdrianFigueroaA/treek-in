@@ -102,6 +102,8 @@ height: 200px;
 background-image: url(./../img/bar-graph.svg);
 background-repeat: no-repeat;
 background-position: center;
+animation: opacidad 5s ease-in 0s  ;
+
 }
 
 
@@ -116,6 +118,22 @@ background-position: center;
 }
 
 
+.contenedor__tarjeta1 , .contenedor__tarjeta2 {
+
+p {
+        font-family: "Raleway", sans-serif;
+        font-weight: bold;
+        
+
+        }
+        
+
+}
+
+
+
+
+
 // resolucion tablet
 
 @media (max-width:768px) {
@@ -126,9 +144,17 @@ background-position: center;
 
 
 
-    .caracteristicas__estadisticas p {
+    .caracteristicas__estadisticas {
+    
+    p {
         padding-right: 15%;
     }
+
+    h2{
+
+    font-size: 25px;
+    }
+}
 
 
     .principal__texto {
@@ -146,13 +172,14 @@ background-position: center;
         background-size: contain;
     }
 
+    
 
     .contenedor__tarjeta1 , .contenedor__tarjeta2  {
 
         p {
         font-family: "Raleway", sans-serif;
         font-weight: bold;
-        font-size: 40px;
+        
 
         }
         
@@ -239,5 +266,12 @@ background-position: center;
         
     }
 
+.row {
     
+    margin-right:0 !important;
+    margin-left: 0 !important;
+
+    
+}
+
 }

@@ -33,18 +33,24 @@ margin: 0 30px;
 
 
 
-.contenedor__tarjeta1 ,.contenedor__tarjeta2 {
+// .contenedor__tarjeta1 ,.contenedor__tarjeta2 {
 
 
-    p{
-    font-family: $raleway;
-    font-weight: bold;
-    font-size:$xxxx-large ;
+//     p{
+//     font-family: $raleway;
+//     font-weight: bold;
+//     font-size:$xxxx-large ;
 
-    }
+//     }
  
-}
+// }
 
+.card-text{
+
+font-family: $raleway;
+    font-weight: bold;
+    
+}
 
 .contenedor__tarjeta2{
 

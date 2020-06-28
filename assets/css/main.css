@@ -14,6 +14,17 @@
   box-sizing: border-box;
 }
 
+@keyframes opacidad {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .hero {
   background-image: url(./../img/bg-hero.svg);
   background-repeat: no-repeat;
@@ -83,6 +94,7 @@
   background-image: url(./../img/bar-graph.svg);
   background-repeat: no-repeat;
   background-position: center;
+  animation: opacidad 5s ease-in 0s;
 }
 
 .contenedor {
@@ -93,6 +105,11 @@
   padding-top: 5%;
 }
 
+.contenedor__tarjeta1 p, .contenedor__tarjeta2 p {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+}
+
 @media (max-width: 768px) {
   .precios {
     padding-top: 20%;
@@ -100,6 +117,9 @@
 
   .caracteristicas__estadisticas p {
     padding-right: 15%;
+  }
+  .caracteristicas__estadisticas h2 {
+    font-size: 25px;
   }
 
   .principal__texto {
@@ -118,7 +138,6 @@
   .contenedor__tarjeta1 p, .contenedor__tarjeta2 p {
     font-family: "Raleway", sans-serif;
     font-weight: bold;
-    font-size: 40px;
   }
 }
 @media (max-width: 360px) {
@@ -173,6 +192,11 @@
     font-family: "Open Sans", sans-serif;
     font-weight: normal;
   }
+
+  .row {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+  }
 }
 .footer {
   background: #221D23;
@@ -196,10 +220,6 @@
 @media (max-width: 360px) {
   .footer__spa {
     justify-content: center;
-  }
-
-  .footer__legal {
-    align-items: end;
   }
 
   .footer {
@@ -476,10 +496,9 @@
   text-align: left;
 }
 
-.contenedor__tarjeta1 p, .contenedor__tarjeta2 p {
+.card-text {
   font-family: "Raleway", sans-serif;
   font-weight: bold;
-  font-size: 45px;
 }
 
 .contenedor__tarjeta2 {
